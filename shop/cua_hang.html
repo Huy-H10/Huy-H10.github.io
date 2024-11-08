@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng bán hàng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cửa hàng trực tuyến</h1>
+        <nav>
+            <a href="#home">Trang chủ</a>
+            <a href="#products">Sản phẩm</a>
+            <a href="#cart">Giỏ hàng</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Sản phẩm nổi bật</h2>
+        <div class="product-list">
+            <div class="product" data-id="1">
+                <img src="./images/áo.jpg" alt="Sản phẩm 1">
+                <h3>Sản phẩm 1</h3>
+                <p>Giá: 100,000₫</p>
+                <button onclick="addToCart(1)">Thêm vào giỏ</button>
+            </div>
+            <div class="product" data-id="2">
+                <img src="./images/quần.jpg" alt="Sản phẩm 2">
+                <h3>Sản phẩm 2</h3>
+                <p>Giá: 200,000₫</p>
+                <button onclick="addToCart(2)">Thêm vào giỏ</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Giỏ hàng</h2>
+        <div id="cart-items"></div>
+        <p id="total">Tổng: 0₫</p>
+        <button onclick="checkout()">Thanh toán</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
